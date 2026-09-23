@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>قسم دعم الموقع | cities.ly</title>
+  <meta name="description" content="ادعم موقع cities.ly لمواصلة تطوير المحتوى السياحي الليبي وتحسين المنصة.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://cities.ly/support.html">
+  <link rel="alternate" hreflang="ar" href="https://cities.ly/support.html">
+  <link rel="alternate" hreflang="en" href="https://cities.ly/en/support.html">
+  <link rel="alternate" hreflang="x-default" href="https://cities.ly/support.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .support-page{padding:130px 0 80px}
+    .support-card{max-width:760px;margin:0 auto;background:var(--surface);border-radius:var(--radius);padding:34px;box-shadow:var(--shadow)}
+    .support-card h1{margin-top:0;color:var(--green-dark)}
+    .iban-box{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--green-soft);border:1px solid var(--line);padding:14px 16px;border-radius:12px;direction:ltr}
+    .iban-text{font-weight:700;font-size:1.05rem;letter-spacing:1px;color:var(--ink)}
+    .iban-actions{display:flex;gap:8px;align-items:center}
+    .btn-copy{background:var(--green);color:#fff;border:none;padding:9px 14px;border-radius:8px;cursor:pointer;font-weight:700}
+    .btn-copy:hover{background:var(--green-dark)}
+    .btn-copy:active{transform:translateY(1px)}
+    .small-note{color:var(--muted);margin-top:10px}
+    .success-msg{color:#065f46;background:#ecfdf5;border:1px solid #a7f3d0;padding:8px 10px;border-radius:8px;display:none;margin-top:10px}
+    @media (max-width:600px){.iban-box{flex-direction:column;align-items:stretch}.iban-actions{justify-content:flex-start}}
+  </style>
+</head>
+<body>
+  <nav class="navbar transparent"><div class="navbar-inner"><a href="index.html" class="logo"><div class="logo-icon"><i class="fas fa-compass"></i></div><span>cities.ly</span></a><ul class="nav-links" id="navLinks"></ul><div class="nav-actions"><button class="lang-toggle" id="langToggle" type="button">EN</button><button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobileMenu"><i class="fas fa-bars"></i></button></div></div></nav>
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div><div class="mobile-menu" id="mobileMenu"><button class="mobile-menu-close" id="mobileMenuClose" aria-label="إغلاق القائمة"><i class="fas fa-times"></i></button><ul class="mobile-menu-links" id="mobileMenuLinks"></ul></div>
+  <main class="support-page"><div class="container"><div class="support-card">
+    <h1>قسم دعم الموقع</h1>
+    <p>شكراً لدعمكم! لمتابعة تشغيل وتطوير المنصة وتحسين المحتوى، يمكنكم المساهمة عبر التحويل البنكي إلى الحساب الرسمي التالي.</p>
+
+    <div style="margin-top:18px;">
+      <label style="display:block;font-weight:700;margin-bottom:8px">تفاصيل الحساب البنكي</label>
+      <div class="iban-box" role="region" aria-label="تفاصيل الحساب البنكي">
+        <div>
+          <div class="iban-text">IBAN: <span id="iban-display">LY64 0020 3703 7201 0001 1104 4</span></div>
+          <div class="small-note">البنك: مصرف الجمهورية — صاحب الحساب: مهندس / ناجي علي التير</div>
+        </div>
+        <div class="iban-actions">
+          <button class="btn-copy" id="copyIbanBtn" aria-live="polite"><i class="fas fa-copy"></i>&nbsp;نسخ رقم الحساب</button>
+        </div>
+      </div>
+      <div id="copySuccess" class="success-msg" role="status">تم نسخ رقم الحساب (بدون مسافات) إلى الحافظة.</div>
+      <p class="small-note" style="margin-top:12px">ملاحظة: عند اللصق في نماذج التحويل البنكي، يمكن استخدام الـ IBAN بدون مسافات لتجنب الأخطاء.</p>
+      <p class="small-note" style="margin-top:8px">للتواصل الهاتفي: <a href="tel:+218917021437" style="color:var(--green-dark);font-weight:700">+218 917021437</a></p>
+    </div>
+
+    <h2 style="margin-top:22px">تعليمات السداد</h2>
+    <p class="small-note">يرجى تضمين اسم المتبرع أو البريد الإلكتروني في حقل الوصف عند إجراء التحويل، حتى نتمكن من التواصل وشكر المساهمين. إذا كنتم بحاجة إلى فاتورة أو إيصال رسمي، أرسلوا لنا بياناتكم على info@cities.ly.</p>
+
+    <h2 style="margin-top:20px">مزيد من المعلومات</h2>
+    <p class="small-note">للاطلاع على التفاصيل الكاملة أو بدائل الدفع، تواصلوا معنا عبر البريد أو الهاتف أعلاه.</p>
+  </div></div></main>
+  <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="index.html" class="logo"><div class="logo-icon"><i class="fas fa-compass"></i></div><span>cities.ly</span></a><p>دليلك الشامل للسياحة في ليبيا.</p></div><div><h3 class="footer-title">روابط سريعة</h3><ul class="footer-links"><li><a href="cities.html">المدن</a></li><li><a href="hotels.html">الفنادق</a></li><li><a href="landmarks.html">المعالم</a></li><li><a href="support.html">دعم الموقع</a></li></ul></div><div><h3 class="footer-title">اتصل بنا</h3><ul class="footer-links footer-contact"><li><a href="mailto:info@cities.ly">info@cities.ly</a></li><li><a href="tel:+218917021437">+218 917021437</a></li><li>طرابلس، ليبيا</li></ul></div></div><div class="footer-bottom"><span>&copy; 2026 cities.ly - <span>جميع الحقوق محفوظة</span></span><span>Libya Tourism Guide</span></div></div></footer>
+  <script src="script.js"></script>
+  <script>
+    (function(){
+      const copyBtn = document.getElementById('copyIbanBtn');
+      const ibanDisplay = document.getElementById('iban-display');
+      const success = document.getElementById('copySuccess');
+      const ibanRaw = 'LY64002037037201000111044';
+      copyBtn.addEventListener('click', async function (){
+        try{
+          await navigator.clipboard.writeText(ibanRaw);
+          success.style.display = 'block';
+          setTimeout(() => { success.style.display = 'none'; }, 3000);
+        } catch (err) {
+          const range = document.createRange();
+          range.selectNode(ibanDisplay);
+          const sel = window.getSelection();
+          sel.removeAllRanges();
+          sel.addRange(range);
+          try{
+            document.execCommand('copy');
+            success.style.display = 'block';
+            setTimeout(() => { success.style.display = 'none'; }, 3000);
+          } catch(e){
+            alert('تعذر نسخ رقم الحساب تلقائياً. الرجاء نسخه يدوياً: ' + ibanRaw);
+          }
+          sel.removeAllRanges();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
